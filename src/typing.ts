@@ -4,7 +4,7 @@ const PHRASES = [
     'side-project builder.',
     'mobile app developer.',
     'developer building with AI.',
-    'developer mid-climb.',
+    // 'developer mid-climb.',
 ];
 
 const TYPE_SPEED    = 65;   // ms per character typed

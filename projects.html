@@ -12,33 +12,41 @@
     <meta property="og:title" content="Projects by Angel Umeh">
     <meta property="og:description" content="Full-stack developer based in Lagos. TypeScript, React, Angular, Node.js.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://angelumeh.dev/projects.html">
+    <meta property="og:url" content="https://angelumeh.dev/projects">
     <meta property="og:image" content="https://angelumeh.dev/assets/akcumeh-og-image.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@akcumeh">
-    <meta name="twitter:image" content="https://angelumeh.dev/assets/akcumeh-og-image-1.png">
+    <meta name="twitter:image" content="https://angelumeh.dev/assets/akcumeh-og-image.png">
 </head>
 <body>
 
     <!-- ─── NAV ─── -->
     <nav>
         <div class="container">
-            <a href="index.html" class="nav-brand">
+            <a href="/" class="nav-brand">
                 <img src="/assets/favicon-32x32.png" alt="" class="nav-brand-mark">
                 <span>Angel Umeh</span>
             </a>
-            <a href="index.html" class="nav-back">Back to home</a>
+            <a href="/" class="nav-back">Back to home</a>
         </div>
     </nav>
 
     <!-- ─── PAGE HERO ─── -->
     <header class="page-hero">
         <div class="container">
-            <div class="eyebrow">Project library · 2021—2026</div>
+            <div class="page-tabs-row">
+                <div class="page-tabs">
+                    <a class="page-tab active" data-tab="projects">Projects</a>
+                    <a class="page-tab" data-tab="altschool">AltSchool</a>
+                </div>
+                <a class="wakatime-badge" href="https://wakatime.com/@7e4fa90c-f505-4dcd-be22-3251f86f70fc" target="_blank" rel="noopener">
+                    <img src="https://wakatime.com/badge/user/7e4fa90c-f505-4dcd-be22-3251f86f70fc.svg" alt="WakaTime coding stats">
+                </a>
+            </div>
             <h1>Everything I've built, and a few things <em>shelved</em> along the way.</h1>
             <p>From production apps with real users to weekend experiments that taught me something. Filtered by type.</p>
 
-            <div class="filter-bar">
+            <div class="filter-bar" id="projects-filter-bar">
                 <div class="filters">
                     <button class="filter-btn active" data-filter="all">All</button>
                     <button class="filter-btn" data-filter="product">Product</button>
@@ -52,8 +60,8 @@
         </div>
     </header>
 
-    <!-- ─── PROJECTS GRID ─── -->
-    <section class="projects-section">
+    <!-- ─── PROJECTS SECTION ─── -->
+    <section class="projects-section" id="tab-projects">
         <div class="container">
             <div class="projects-grid" id="projects-grid">
 
@@ -72,7 +80,7 @@
                         </div>
                         <div class="proj-year">2024</div>
                     </div>
-                    <p class="proj-desc">AI-powered educational assistant on WhatsApp and Telegram. 1,165+ users via a University of Lagos pilot programme. Won 2nd place + Most Impactful Business at TEDxLagos 2025.</p>
+                    <p class="proj-desc">AI-powered educational assistant on WhatsApp and Telegram. 1,500+ users via a University of Lagos pilot programme. Won 2nd place + Most Impactful Idea at TEDxLagos 2025.</p>
                     <div class="proj-foot">
                         <div class="proj-stack">
                             <span>Node.js</span><span>MongoDB</span><span>Anthropic API</span><span>React</span><span>TailwindCSS</span>
@@ -327,6 +335,7 @@
                     <p class="proj-desc">Multi-section landing page. Responsive. Frontend Mentor challenge.</p>
                     <div class="proj-foot">
                         <div class="proj-stack"><span>HTML</span><span>CSS</span></div>
+                        <a class="proj-link" href="https://akcumeh.github.io/03-sunnyside" target="_blank" rel="noopener">Visit</a>
                     </div>
                 </article>
 
@@ -341,6 +350,7 @@
                     <p class="proj-desc">Responsive landing page with Bootstrap carousel and pricing cards.</p>
                     <div class="proj-foot">
                         <div class="proj-stack"><span>HTML</span><span>CSS</span><span>Bootstrap 5</span><span>JS</span></div>
+                        <a class="proj-link" href="https://akcumeh.github.io/tindog-project" target="_blank" rel="noopener">Visit</a>
                     </div>
                 </article>
 
@@ -385,6 +395,7 @@
                     <p class="proj-desc">Multi-input tip calculator with custom radio cards and reset flow.</p>
                     <div class="proj-foot">
                         <div class="proj-stack"><span>HTML</span><span>CSS</span><span>JS</span><span>jQuery</span></div>
+                        <a class="proj-link" href="https://akcumeh.github.io/09-tip-calculator" target="_blank" rel="noopener">Visit</a>
                     </div>
                 </article>
 
@@ -396,9 +407,13 @@
                         </div>
                         <div class="proj-year">2023</div>
                     </div>
-                    <p class="proj-desc">Responsive card with CSS custom properties.</p>
+                    <p class="proj-desc">Responsive card with CSS custom properties. Two versions — one Flexbox, one Grid.</p>
                     <div class="proj-foot">
                         <div class="proj-stack"><span>HTML</span><span>CSS</span></div>
+                        <div style="display:flex;gap:10px">
+                            <a class="proj-link" href="https://akcumeh.github.io/07-qr-code-component" target="_blank" rel="noopener">Flex</a>
+                            <a class="proj-link" href="https://akcumeh.github.io/07-qr-code-component-alt" target="_blank" rel="noopener">Grid</a>
+                        </div>
                     </div>
                 </article>
 
@@ -413,6 +428,7 @@
                     <p class="proj-desc">Accessibility-inclusive pricing card.</p>
                     <div class="proj-foot">
                         <div class="proj-stack"><span>HTML</span><span>CSS</span></div>
+                        <a class="proj-link" href="https://akcumeh.github.io/05-single-price-grid-component" target="_blank" rel="noopener">Visit</a>
                     </div>
                 </article>
 
@@ -427,8 +443,92 @@
                     <p class="proj-desc">Responsive feature grid rebuilt from an earlier attempt.</p>
                     <div class="proj-foot">
                         <div class="proj-stack"><span>HTML</span><span>CSS</span></div>
+                        <a class="proj-link" href="https://akcumeh.github.io/02-fourcard-feature-section-redo" target="_blank" rel="noopener">Visit</a>
                     </div>
                 </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── ALTSCHOOL TAB ─── -->
+    <section class="altschool-section tab-panel" id="tab-altschool" hidden>
+        <div class="container">
+            <p class="altschool-intro">A record of what I built and learned earning my Backend Engineering Diploma at AltSchool Africa — from the very first HTML assignment to shipping full-stack production apps.</p>
+
+            <div class="altschool-timeline">
+
+                <div class="al-item">
+                    <div class="al-meta">
+                        <span class="al-date">Jul 2025</span>
+                        <span class="al-tag">HTML</span>
+                    </div>
+                    <div class="al-body">
+                        <div class="al-name">Self Introduction Page</div>
+                        <p class="al-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semester one, assignment one — a plain HTML self-introduction page with no styling.</p>
+                        <a class="al-link" href="https://github.com/akcumeh/altschool-s01-a01" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="al-item">
+                    <div class="al-meta">
+                        <span class="al-date">Jul 2025</span>
+                        <span class="al-tag">HTML</span>
+                    </div>
+                    <div class="al-body">
+                        <div class="al-name">HTML Tables &amp; Media</div>
+                        <p class="al-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tables, images, and embedded media in plain HTML.</p>
+                        <a class="al-link" href="https://github.com/akcumeh/altschool-s01-a02" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="al-item">
+                    <div class="al-meta">
+                        <span class="al-date">Sep 2025</span>
+                        <span class="al-tag">HTML</span>
+                    </div>
+                    <div class="al-body">
+                        <div class="al-name">Recipe Page</div>
+                        <p class="al-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semantic HTML document for a recipe, practicing structure and content hierarchy.</p>
+                        <a class="al-link" href="https://github.com/akcumeh/altschool-s01-a03" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="al-item">
+                    <div class="al-meta">
+                        <span class="al-date">Sep 2025</span>
+                        <span class="al-tag">CSS</span>
+                    </div>
+                    <div class="al-body">
+                        <div class="al-name">Self Intro — CSS Flex &amp; Grid</div>
+                        <p class="al-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Revisiting the intro page, this time with proper layout using Flexbox and Grid.</p>
+                        <a class="al-link" href="https://github.com/akcumeh/altschool-s01-a04" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="al-item">
+                    <div class="al-meta">
+                        <span class="al-date">Oct 2025</span>
+                        <span class="al-tag">JavaScript</span>
+                    </div>
+                    <div class="al-body">
+                        <div class="al-name">Lorem Ipsum Project Five</div>
+                        <p class="al-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. More placeholder content to fill out the timeline and test the layout at various lengths.</p>
+                        <a class="al-link" href="#" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="al-item">
+                    <div class="al-meta">
+                        <span class="al-date">Nov 2025</span>
+                        <span class="al-tag">Node.js</span>
+                    </div>
+                    <div class="al-body">
+                        <div class="al-name">Lorem Ipsum Project Six</div>
+                        <p class="al-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A backend assignment covering REST APIs and Express routing.</p>
+                        <a class="al-link" href="#" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -442,9 +542,11 @@
                 <p>Whether it's a build you'd like to collaborate on, a role you think I'd be a fit for, or just a question about how something here works — I'm a fast reply.</p>
             </div>
             <div class="cta-actions">
-                <a href="mailto:akcumeh@gmail.com">Email me <span class="arrow">↗</span></a>
-                <a href="index.html#contact">All contact links <span class="arrow">→</span></a>
-                <a href="https://github.com/akcumeh" target="_blank" rel="noopener">More on GitHub <span class="arrow">↗</span></a>
+                <a href="https://linkedin.com/in/angelumeh" target="_blank" rel="noopener">LinkedIn <span class="arrow">↗</span></a>
+                <a href="https://x.com/akcumeh" target="_blank" rel="noopener">Twitter / X <span class="arrow">↗</span></a>
+                <a href="https://t.me/yarnandmk" target="_blank" rel="noopener">Telegram <span class="arrow">↗</span></a>
+                <a href="mailto:akcumeh@gmail.com">Email <span class="arrow">↗</span></a>
+                <a class="cta-full" href="https://github.com/akcumeh" target="_blank" rel="noopener">More on GitHub <span class="arrow">↗</span></a>
             </div>
         </div>
     </section>
@@ -453,7 +555,7 @@
     <footer class="mini">
         <div class="container">
             <span>© 2026 Angel Umeh · Lagos, NG</span>
-            <a href="index.html">← Back to home</a>
+            <a href="/">← Back to home</a>
         </div>
     </footer>
 

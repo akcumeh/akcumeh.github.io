@@ -25,20 +25,24 @@ export function initFilter(): void {
 
         countEl!.textContent = String(visible);
 
-        // hide group-head rows whose section has no visible cards
+        // hide group-head rows whose section has no visible cards; update count pills
         groups.forEach(group => {
             let sibling = group.nextElementSibling as HTMLElement | null;
             let hasVisible = false;
+            let groupCount = 0;
 
             while (sibling && !sibling.hasAttribute('data-group')) {
                 if (sibling.tagName === 'ARTICLE' && !sibling.hidden) {
                     hasVisible = true;
-                    break;
+                    groupCount++;
                 }
                 sibling = sibling.nextElementSibling as HTMLElement | null;
             }
 
             group.hidden = !hasVisible;
+
+            const pill = group.querySelector<HTMLElement>('.count-pill');
+            if (pill) pill.textContent = String(groupCount);
         });
     }
 
