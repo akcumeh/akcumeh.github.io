@@ -60,15 +60,15 @@ nav .container {
     width: 24px;
     height: 24px;
     border-radius: 7px;
-    background: var(--cream);
-    display: grid;
-    place-items: center;
-    color: var(--dusk);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: -0.02em;
     flex-shrink: 0;
+    object-fit: contain;
+}
+.nav-brand-name {
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+nav.scrolled .nav-brand-name {
+    opacity: 1;
 }
 .nav-links { display: flex; gap: 30px; font-size: 13px; }
 .nav-links a { opacity: 0.65; transition: opacity 0.15s, color 0.15s; }
@@ -423,6 +423,10 @@ section.cream .section-meta { color: rgba(14,11,36,0.45); }
     font-family: 'DM Sans', sans-serif;
     font-size: 11px;
     font-weight: 600;
+}
+.work-tag img.dot {
+    background: transparent;
+    object-fit: contain;
 }
 .work-role { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: rgba(254,245,228,0.5); }
 .work-stack { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }

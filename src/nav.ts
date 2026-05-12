@@ -1,6 +1,20 @@
 export function initNav(): void {
     const hamburger = document.querySelector<HTMLButtonElement>('.nav-hamburger');
     const sheet     = document.getElementById('nav-sheet');
+    const navEl     = document.querySelector<HTMLElement>('nav');
+    const hero      = document.querySelector<HTMLElement>('.hero, .page-hero');
+
+    // reveal the brand name once the hero scrolls out of view
+    if (navEl && hero) {
+        const observer = new IntersectionObserver(
+            ([entry]) => navEl.classList.toggle('scrolled', !entry.isIntersecting),
+            { threshold: 0 },
+        );
+        observer.observe(hero);
+    } else if (navEl) {
+        // no hero on this page — always show the name
+        navEl.classList.add('scrolled');
+    }
 
     if (!hamburger || !sheet) return;
 

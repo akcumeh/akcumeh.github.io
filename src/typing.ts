@@ -2,8 +2,9 @@ const PHRASES = [
     'full-stack developer.',
     'TypeScript enthusiast.',
     'side-project builder.',
-    'AI integrations nerd.',
-    'mid-level and climbing.',
+    'mobile app developer.',
+    'developer building with AI.',
+    'developer mid-climb.',
 ];
 
 const TYPE_SPEED    = 65;   // ms per character typed
