@@ -6,6 +6,444 @@
     <title>Angel's Projects</title>
 </head>
 <body>
-    <script type="module" src="/src/projects.ts"></script>
+
+    <!-- ─── NAV ─── -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <div class="nav-brand-mark">A</div>
+                <span>Angel Umeh</span>
+            </a>
+            <a href="index.html" class="nav-back">Back to home</a>
+        </div>
+    </nav>
+
+    <!-- ─── PAGE HERO ─── -->
+    <header class="page-hero">
+        <div class="container">
+            <div class="eyebrow">Project library · 2021—2026</div>
+            <h1>Everything I've built, and a few things <em>shelved</em> along the way.</h1>
+            <p>From production apps with real users to weekend experiments that taught me something. Filtered by type.</p>
+
+            <div class="filter-bar">
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="product">Product</button>
+                    <button class="filter-btn" data-filter="full-stack">Full-Stack</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="ai">AI</button>
+                    <button class="filter-btn" data-filter="experiments">Experiments</button>
+                </div>
+                <div class="count">Showing <strong id="count-num">14</strong> projects</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ─── PROJECTS GRID ─── -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid" id="projects-grid">
+
+                <!-- ── Featured ── -->
+                <div class="group-head" data-group>
+                    <h3>Featured</h3>
+                    <span class="count-pill">2</span>
+                    <div class="rule"></div>
+                </div>
+
+                <article class="proj-card featured" data-cat="product ai">
+                    <div class="proj-head">
+                        <div>
+                            <div class="proj-cat">Product · AI</div>
+                            <div class="proj-name">Florence <em>AI</em></div>
+                        </div>
+                        <div class="proj-year">2024</div>
+                    </div>
+                    <p class="proj-desc">AI-powered educational assistant on WhatsApp and Telegram. 1,165+ users via a University of Lagos pilot programme. Won 2nd place + Most Impactful Business at TEDxLagos 2025.</p>
+                    <div class="proj-foot">
+                        <div class="proj-stack">
+                            <span>Node.js</span><span>MongoDB</span><span>Anthropic API</span><span>React</span><span>TailwindCSS</span>
+                        </div>
+                        <a class="proj-link" href="https://myflorence.co" target="_blank" rel="noopener">Visit</a>
+                    </div>
+                </article>
+
+                <article class="proj-card featured" data-cat="product">
+                    <div class="proj-head">
+                        <div>
+                            <div class="proj-cat">Product</div>
+                            <div class="proj-name">Encentral <em>EMS</em></div>
+                        </div>
+                        <div class="proj-year">2025</div>
+                    </div>
+                    <p class="proj-desc">Internal employee management system with RBAC, drag-and-drop kanban (Angular CDK), attendance tracking, leave management, and data dashboards. In active internal use.</p>
+                    <div class="proj-foot">
+                        <div class="proj-stack">
+                            <span>Angular 20</span><span>TypeScript</span><span>Material UI</span><span>Angular CDK</span><span>SCSS</span>
+                        </div>
+                        <a class="proj-link" href="https://esl-ems.netlify.app" target="_blank" rel="noopener">View project</a>
+                    </div>
+                </article>
+
+                <!-- ── Side Projects ── -->
+                <div class="group-head" data-group>
+                    <h3>Side projects</h3>
+                    <span class="count-pill">12</span>
+                    <div class="rule"></div>
+                </div>
+
+                <article class="proj-card" data-cat="product full-stack">
+                    <div class="proj-head">
+                        <div>
+                            <div class="proj-cat">Product · Full-Stack</div>
+                            <div class="proj-name">Rent<em>Watch</em></div>
+                        </div>
+                        <div class="proj-year">2026</div>
+                    </div>
+                    <p class="proj-desc">Built for the <a class="inline-link" href="https://buildathon.enyata.com/" target="_blank" rel="noopener">Enyata × Interswitch Buildathon 2026</a>. Mutual accountability platform for Lagos landlords and tenants with a Hue Score reputation system, role-based dashboards, and lease/payment management. Full PostgreSQL schema with RLS.</p>
+                    <div class="proj-foot">
+                        <div class="proj-stack">
+                            <span>Next.js</span><span>TypeScript</span><span>TailwindCSS</span><span>Supabase</span><span>Framer Motion</span>
+                        </div>
+                        <a class="proj-link" href="https://sibyl-rentwatch.vercel.app/login" target="_blank" rel="noopener">Visit</a>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-cat="full-stack experiments">
+                    <div class="proj-head">
+                        <div>
+                            <div class="proj-cat">Full-Stack · Experiments</div>
+                            <div class="proj-name">Guessing <em>Game</em></div>
+                        </div>
+                        <div class="proj-year">2026</div>
+                    </div>
+                    <p class="proj-desc">Real-time multiplayer word-guessing game. Session management, reconnection handling, live state broadcasting, countdown timers, player disconnect cleanup. Frontend and backend both tested.</p>
+                    <div class="proj-foot">
+                        <div class="proj-stack">
+                            <span>Socket.io</span><span>TypeScript</span><span>React</span><span>Vite</span><span>Supabase</span><span>Vitest</span>
+                        </div>
+                        <a class="proj-link" href="https://akcumeh-gg.netlify.app" target="_blank" rel="noopener">Play it</a>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-cat="full-stack">
+                    <div class="proj-head">
+                        <div>
+                            <div class="proj-cat">Full-Stack</div>
+                            <div class="proj-name"><em>Blogr</em></div>
+                        </div>
+                        <div class="proj-year">2026</div>
+                    </div>
+                    <p class="proj-desc">Full-stack blog platform with post scheduling via Bull/Redis job queue, JWT auth, pagination, and tag filtering. REST API built as AltSchool coursework, extended into a full app.</p>
+                    <div class="proj-foot">
+                        <div class="proj-stack">
+                            <span>Angular 21</span><span>Signals</span><span>Node.js</span><span>Express</span><span>Bull</span><span>Redis</span>
+                        </div>
+                        <a class="proj-link" href="https://blogr-ng.netlify.app" target="_blank" rel="noopener">Visit</a>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-cat="full-stack ai">
+                    <div class="proj-head">
+                        <div>
+                            <div class="proj-cat">Full-Stack · AI</div>
+                            <div class="proj-name">Flow <em>Reminder</em></div>
+                        </div>
+                        <div class="proj-year">2026</div>
+                    </div>
+                    <p class="proj-desc">Full-stack reminder app with AI-powered voice call notifications via Vapi. CRUD, automatic timezone detection, real-time status tracking, optimistic UI with React Query.</p>
+                    <div class="proj-foot">
+                        <div class="proj-stack">
+                            <span>Next.js</span><span>TypeScript</span><span>shadcn/ui</span><span>FastAPI</span><span>SQLite</span><span>Vapi</span>
+                        </div>
+                        <a class="proj-link" href="https://github.com/akcumeh/flow-reminder-app" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-cat="full-stack">
+                    <div class="proj-head">
+                        <div>
+                            <div class="proj-cat">Full-Stack</div>
+                            <div class="proj-name">Birthday <em>Reminder</em></div>
+                        </div>
+                        <div class="proj-year">2026</div>
+                    </div>
+                    <p class="proj-desc">Node.js service with a daily cron job that queries a Supabase PostgreSQL database and sends personalised HTML birthday emails. Full Jest coverage.</p>
+                    <div class="proj-foot">
+                        <div class="proj-stack">
+                            <span>Node.js</span><span>TypeScript</span><span>Supabase</span><span>node-cron</span><span>Nodemailer</span><span>Jest</span>
+                        </div>
+                        <a class="proj-link" href="https://altschool-s03-a02.onrender.com" target="_blank" rel="noopener">Visit</a>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-cat="experiments">
+                    <div class="proj-head">
+                        <div>
+                            <div class="proj-cat">Experiments</div>
+                            <div class="proj-name">Box Model <em>Tutorial</em></div>
+                        </div>
+                        <div class="proj-year">2025</div>
+                    </div>
+                    <p class="proj-desc">Interactive educational tool that teaches the CSS box model through reactive UI demos and visual state changes. Built to teach a younger sibling.</p>
+                    <div class="proj-foot">
+                        <div class="proj-stack">
+                            <span>Angular 20</span><span>Angular CDK</span><span>Material UI</span><span>RxJS</span>
+                        </div>
+                        <a class="proj-link" href="https://the-box-story.netlify.app" target="_blank" rel="noopener">Visit</a>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-cat="experiments">
+                    <div class="proj-head">
+                        <div>
+                            <div class="proj-cat">Experiments</div>
+                            <div class="proj-name">Math <em>Game</em></div>
+                        </div>
+                        <div class="proj-year">2025</div>
+                    </div>
+                    <p class="proj-desc">Reactive arithmetic quiz with Angular Signals, OnPush change detection, randomised questions, animated feedback, and a hi-score tracker.</p>
+                    <div class="proj-foot">
+                        <div class="proj-stack">
+                            <span>Angular 20</span><span>Material UI</span><span>TypeScript</span>
+                        </div>
+                        <a class="proj-link" href="https://ng-math-game.netlify.app" target="_blank" rel="noopener">Visit</a>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-cat="experiments">
+                    <div class="proj-head">
+                        <div>
+                            <div class="proj-cat">Experiments</div>
+                            <div class="proj-name">Social Media <em>Dashboard</em></div>
+                        </div>
+                        <div class="proj-year">2025</div>
+                    </div>
+                    <p class="proj-desc">Analytics tracker displaying aggregated stats across platforms with a light/dark theme switcher.</p>
+                    <div class="proj-foot">
+                        <div class="proj-stack">
+                            <span>React 19</span><span>TailwindCSS</span>
+                        </div>
+                        <a class="proj-link" href="https://akcumeh.github.io/12-sm-dashboard" target="_blank" rel="noopener">Visit</a>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-cat="experiments">
+                    <div class="proj-head">
+                        <div>
+                            <div class="proj-cat">Experiments</div>
+                            <div class="proj-name">Currency <em>Converter</em></div>
+                        </div>
+                        <div class="proj-year">2025</div>
+                    </div>
+                    <p class="proj-desc">Live currency conversion app with real exchange rates, localStorage caching, hourly auto-refresh.</p>
+                    <div class="proj-foot">
+                        <div class="proj-stack">
+                            <span>Angular 19</span><span>Material UI</span><span>RxJS</span><span>HttpClient</span>
+                        </div>
+                        <a class="proj-link" href="https://ng-currency-convert.netlify.app" target="_blank" rel="noopener">Visit</a>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-cat="mobile">
+                    <div class="proj-head">
+                        <div>
+                            <div class="proj-cat">Mobile</div>
+                            <div class="proj-name">Todo App <em>(RN)</em></div>
+                        </div>
+                        <div class="proj-year">2025</div>
+                    </div>
+                    <p class="proj-desc">Mobile todo app with dark/light mode, drag-and-drop reordering via long-press gesture with spring animations, slide-out delete animations.</p>
+                    <div class="proj-foot">
+                        <div class="proj-stack">
+                            <span>React Native</span><span>Expo</span><span>Reanimated</span><span>Gesture Handler</span>
+                        </div>
+                        <a class="proj-link" href="https://16-todo-app.netlify.app" target="_blank" rel="noopener">Visit</a>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-cat="mobile">
+                    <div class="proj-head">
+                        <div>
+                            <div class="proj-cat">Mobile</div>
+                            <div class="proj-name">Space Tourism <em>App</em></div>
+                        </div>
+                        <div class="proj-year">2025</div>
+                    </div>
+                    <p class="proj-desc">Mobile-first space tourism intro app with custom swipe gestures, animated transitions, and persistent preferences.</p>
+                    <div class="proj-foot">
+                        <div class="proj-stack">
+                            <span>React Native</span><span>Expo</span><span>AsyncStorage</span>
+                        </div>
+                        <a class="proj-link" href="https://space-tourism-rn.netlify.app" target="_blank" rel="noopener">Visit</a>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-cat="product">
+                    <div class="proj-head">
+                        <div>
+                            <div class="proj-cat">Product</div>
+                            <div class="proj-name">Gem <em>Pet Food</em></div>
+                        </div>
+                        <div class="proj-year">2026</div>
+                    </div>
+                    <p class="proj-desc">Custom Shopify landing page with a before/after image slider, theme settings schema, and a fully responsive layout.</p>
+                    <div class="proj-foot">
+                        <div class="proj-stack">
+                            <span>Shopify Liquid</span><span>JavaScript</span><span>CSS</span>
+                        </div>
+                        <a class="proj-link" href="https://gem-pet-food.myshopify.com" target="_blank" rel="noopener">Visit</a>
+                    </div>
+                </article>
+
+                <!-- ── Archive ── -->
+                <div class="group-head" data-group>
+                    <h3>Archive</h3>
+                    <span class="count-pill">8</span>
+                    <div class="rule"></div>
+                </div>
+
+                <article class="proj-card archive" data-cat="archive">
+                    <div class="proj-head">
+                        <div>
+                            <div class="proj-cat">HTML / CSS</div>
+                            <div class="proj-name">Sunnyside <em>Agency</em></div>
+                        </div>
+                        <div class="proj-year">2022</div>
+                    </div>
+                    <p class="proj-desc">Multi-section landing page. Responsive. Frontend Mentor challenge.</p>
+                    <div class="proj-foot">
+                        <div class="proj-stack"><span>HTML</span><span>CSS</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card archive" data-cat="archive">
+                    <div class="proj-head">
+                        <div>
+                            <div class="proj-cat">HTML / CSS / JS</div>
+                            <div class="proj-name"><em>TinDog</em></div>
+                        </div>
+                        <div class="proj-year">2022</div>
+                    </div>
+                    <p class="proj-desc">Responsive landing page with Bootstrap carousel and pricing cards.</p>
+                    <div class="proj-foot">
+                        <div class="proj-stack"><span>HTML</span><span>CSS</span><span>Bootstrap 5</span><span>JS</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card archive" data-cat="archive">
+                    <div class="proj-head">
+                        <div>
+                            <div class="proj-cat">JavaScript</div>
+                            <div class="proj-name">Simon <em>Game</em></div>
+                        </div>
+                        <div class="proj-year">2022</div>
+                    </div>
+                    <p class="proj-desc">JavaScript memory game with sound and animated button sequences.</p>
+                    <div class="proj-foot">
+                        <div class="proj-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                        <a class="proj-link" href="https://akcumeh.github.io/simon-game/" target="_blank" rel="noopener">Play</a>
+                    </div>
+                </article>
+
+                <article class="proj-card archive" data-cat="archive">
+                    <div class="proj-head">
+                        <div>
+                            <div class="proj-cat">JavaScript</div>
+                            <div class="proj-name">Drum <em>Kit</em></div>
+                        </div>
+                        <div class="proj-year">2022</div>
+                    </div>
+                    <p class="proj-desc">Keyboard and click-triggered drum sound player. DOM manipulation.</p>
+                    <div class="proj-foot">
+                        <div class="proj-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                        <a class="proj-link" href="https://akcumeh.github.io/drumkit/" target="_blank" rel="noopener">Play</a>
+                    </div>
+                </article>
+
+                <article class="proj-card archive" data-cat="archive">
+                    <div class="proj-head">
+                        <div>
+                            <div class="proj-cat">HTML / CSS / JS</div>
+                            <div class="proj-name">Tip <em>Calculator</em></div>
+                        </div>
+                        <div class="proj-year">2023</div>
+                    </div>
+                    <p class="proj-desc">Multi-input tip calculator with custom radio cards and reset flow.</p>
+                    <div class="proj-foot">
+                        <div class="proj-stack"><span>HTML</span><span>CSS</span><span>JS</span><span>jQuery</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card archive" data-cat="archive">
+                    <div class="proj-head">
+                        <div>
+                            <div class="proj-cat">HTML / CSS</div>
+                            <div class="proj-name">QR Code <em>Component</em></div>
+                        </div>
+                        <div class="proj-year">2023</div>
+                    </div>
+                    <p class="proj-desc">Responsive card with CSS custom properties.</p>
+                    <div class="proj-foot">
+                        <div class="proj-stack"><span>HTML</span><span>CSS</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card archive" data-cat="archive">
+                    <div class="proj-head">
+                        <div>
+                            <div class="proj-cat">HTML / CSS</div>
+                            <div class="proj-name">Single Price <em>Grid</em></div>
+                        </div>
+                        <div class="proj-year">2022</div>
+                    </div>
+                    <p class="proj-desc">Accessibility-inclusive pricing card.</p>
+                    <div class="proj-foot">
+                        <div class="proj-stack"><span>HTML</span><span>CSS</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card archive" data-cat="archive">
+                    <div class="proj-head">
+                        <div>
+                            <div class="proj-cat">HTML / CSS</div>
+                            <div class="proj-name">Four Card <em>Feature</em></div>
+                        </div>
+                        <div class="proj-year">2022</div>
+                    </div>
+                    <p class="proj-desc">Responsive feature grid rebuilt from an earlier attempt.</p>
+                    <div class="proj-foot">
+                        <div class="proj-stack"><span>HTML</span><span>CSS</span></div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── CTA BAND ─── -->
+    <section class="cta-band">
+        <div class="container">
+            <div>
+                <h2>Spotted something <em>worth talking about?</em></h2>
+                <p>Whether it's a build you'd like to collaborate on, a role you think I'd be a fit for, or just a question about how something here works — I'm a fast reply.</p>
+            </div>
+            <div class="cta-actions">
+                <a href="mailto:akcumeh@gmail.com">Email me <span class="arrow">↗</span></a>
+                <a href="index.html#contact">All contact links <span class="arrow">→</span></a>
+                <a href="https://github.com/akcumeh" target="_blank" rel="noopener">More on GitHub <span class="arrow">↗</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── MINI FOOTER ─── -->
+    <footer class="mini">
+        <div class="container">
+            <span>© 2026 Angel Umeh · Lagos, NG</span>
+            <a href="index.html">← Back to home</a>
+        </div>
+    </footer>
+
+    <script type="module" src="src/projects.ts"></script>
 </body>
 </html>

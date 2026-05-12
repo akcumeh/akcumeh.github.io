@@ -1,11 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angel Umeh | Software Engineer</title>
 </head>
-<body>
-    <script type="module" src="/src/index.ts"></script>
+
+<body id="top">
+
+    <nav>
+        <div class="container">
+            <a href="#top" class="nav-brand">
+                <div class="nav-brand-mark">A</div>
+                <span>Angel Umeh</span>
+            </a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#stack">Stack</a>
+                <a href="#projects">Projects</a>
+                <a href="#writing">Writing</a>
+                <a href="#hobbies">Outside</a>
+            </div>
+            <a href="#contact" class="nav-cta">Open to work</a>
+            <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-sheet">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- mobile nav sheet -->
+    <div class="nav-sheet" id="nav-sheet" role="dialog" aria-label="Navigation">
+        <a href="#about">About</a>
+        <a href="#stack">Stack</a>
+        <a href="#projects">Projects</a>
+        <a href="#writing">Writing</a>
+        <a href="#hobbies">Outside</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <header class="hero">
+        <div class="container">
+            <div class="eyebrow">Remote | Based in Lagos, Nigeria</div>
+            <h1>Hi there, I'm<br><span class="accent">Angel</span><br>I build for <span class="accent">the web,<br>and a
+                    little bit beyond.</span></h1>
+
+            <div class="typing-line">
+                <span class="label">I'm a&nbsp;</span><span class="typed" id="typing-target"></span><span
+                      class="caret"></span>
+            </div>
+
+            <p class="hero-sub">
+                A developer somewhere in the middle of the climb: past the tutorials, deep in real codebases. I build
+                human-friendly web and mobile apps across the full stack, tinker with AI integrations, and care a little
+                too much about the small details. Currently looking for the <strong>next interesting team</strong> to
+                build with, while I ship <a href="#projects" class="orchid-link">side projects</a> in the meantime.
+            </p>
+
+            <div class="hero-meta">
+                <div class="hero-meta-cell">
+                    <span class="meta-label">Currently</span>
+                    <span class="meta-value">Open to roles<span class="small">Full-time | Contract | Remote |
+                            Hybrid</span></span>
+                </div>
+                <div class="hero-meta-cell">
+                    <span class="meta-label">Focus</span>
+                    <span class="meta-value">Full-stack web<span class="small">React / Angular / Node / TS</span></span>
+                </div>
+                <div class="hero-meta-cell">
+                    <span class="meta-label">Also</span>
+                    <span class="meta-value">Mobile | AI tooling<span class="small">React Native | LLM
+                            APIs</span></span>
+                </div>
+                <div class="hero-meta-cell">
+                    <span class="meta-label">Reach</span>
+                    <span class="meta-value">akcumeh@gmail.com<span class="small">@akcumeh, most places</span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="cream" id="about">
+        <div class="container">
+            <div class="section-label">01 — About</div>
+            <h2 class="section-title">A developer <em>still learning</em>, but already shipping.</h2>
+
+            <div class="about-grid">
+                <div class="about-body">
+                    <p>I'm a full-stack developer based in Lagos, working remotely with teams that care about <em>good
+                            craft</em>. My day-to-day is mostly TypeScript on the web. React and Angular on the
+                        frontend, Node on the backend; though I've spent enough time in Python and mobile (React Native
+                        / Expo) to be useful there too.</p>
+                    <p>I think of myself as a mid-level dev: confident enough to own a feature end-to-end, humble enough
+                        to know there's a lot of computing I haven't touched yet. I read other people's code. I ask
+                        questions. I try to leave a codebase a little tidier than I found it.</p>
+                    <p>Outside work, I'm probably crocheting, pummeling my brothers at <em>Mortal Kombat</em>, or
+                        cooking something colorful (no, not lines of code).</p>
+                </div>
+                <aside class="about-side">
+                    <div class="row">
+                        <div class="l">Based</div>
+                        <div class="v">Lagos, Nigeria. <em>Remote-preferred</em>, hybrid </div>
+                    </div>
+                    <div class="row">
+                        <div class="l">Currently</div>
+                        <div class="v">Open to engineering roles</div>
+                    </div>
+                    <div class="row">
+                        <div class="l">Best at</div>
+                        <div class="v">Full-stack <em>TypeScript</em>, API design</div>
+                    </div>
+                    <div class="row">
+                        <div class="l">Learning</div>
+                        <div class="v">Systems design, backend engineering, writing better tests</div>
+                    </div>
+                    <div class="row">
+                        <div class="l">Strongest with</div>
+                        <div class="v">Small, kind teams that ship often</div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section id="stack">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <div class="section-label">02 — Stack</div>
+                    <h2 class="section-title">My <em>toolbox</em>, today.</h2>
+                </div>
+                <div class="section-meta">
+                    Highlighted = tools I reach for first.
+                </div>
+            </div>
+
+            <div class="stack-wrap">
+                <div class="stack-row">
+                    <div class="name">Languages</div>
+                    <div class="chips">
+                        <span class="hl">TypeScript</span><span class="hl">JavaScript</span><span
+                              class="hl">Python</span><span class="hl">HTML</span><span class="hl">CSS</span>
+                    </div>
+                </div>
+                <div class="stack-row">
+                    <div class="name">Frontend</div>
+                    <div class="chips">
+                        <span class="hl">React</span><span class="hl">Next.js</span><span
+                              class="hl">Angular</span><span>React Native / Expo</span><span>jQuery</span>
+                    </div>
+                </div>
+                <div class="stack-row">
+                    <div class="name">Styling</div>
+                    <div class="chips">
+                        <span class="hl">Tailwind CSS</span><span class="hl">Sass / SCSS</span><span class="hl">Material
+                            UI</span><span
+                              class="hl">shadcn/ui</span><span>Less</span><span>Bootstrap</span><span>Semantic /
+                            Fomantic UI</span>
+                    </div>
+                </div>
+                <div class="stack-row">
+                    <div class="name">Backend</div>
+                    <div class="chips">
+                        <span class="hl">Node.js / Express</span><span class="hl">FastAPI</span><span class="hl">RESTful
+                            APIs</span><span>Socket.io</span><span>JWT auth</span><span>Bull + Redis</span>
+                    </div>
+                </div>
+                <div class="stack-row">
+                    <div class="name">Databases</div>
+                    <div class="chips">
+                        <span class="hl">MongoDB</span><span class="hl">PostgreSQL</span><span
+                              class="hl">Supabase</span><span>MySQL</span><span>SQLite</span>
+                    </div>
+                </div>
+                <div class="stack-row">
+                    <div class="name">Testing</div>
+                    <div class="chips">
+                        <span class="hl">Jest</span><span class="hl">Vitest</span><span>Supertest</span><span>React
+                            Testing Library</span>
+                    </div>
+                </div>
+                <div class="stack-row">
+                    <div class="name">AI</div>
+                    <div class="chips">
+                        <span class="hl">Anthropic API</span><span>OpenAI API</span><span>Google Gemini API</span>
+                    </div>
+                </div>
+                <div class="stack-row">
+                    <div class="name">Deployment</div>
+                    <div class="chips">
+                        <span class="hl">Netlify</span><span class="hl">Vercel</span><span>Render</span><span>Shopify
+                            Liquid</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <div class="section-label">03 — Selected Work</div>
+                    <h2 class="section-title">Things I've <em>actually shipped.</em></h2>
+                </div>
+                <div class="section-meta">
+                    Four highlights from the pile.<br>
+                    The rest live in the full library.
+                </div>
+            </div>
+
+            <div class="work-grid">
+
+                <article class="work-card">
+                    <div class="work-aside">
+                        <div class="work-year">2024</div>
+                        <div class="work-tag"><span class="dot">F</span>Florence AI</div>
+                        <div class="work-role">Co-founder | Solo engineer</div>
+                        <div class="work-stack">
+                            <span>Node.js</span><span>MongoDB</span><span>Anthropic
+                                API</span><span>React</span><span>TailwindCSS</span>
+                        </div>
+                    </div>
+                    <div class="work-body">
+                        <h3>An educational assistant that reached <em>1,500+ students</em> and counting.</h3>
+                        <p>Florence AI is a WhatsApp and Telegram chatbot built for underserved students in Africa and
+                            Latin America who can't afford private tutoring or paid AI plans. Every architectural
+                            decision was mine: the command structure, the payment flow, the database schema. The core
+                            question driving every build decision was whether a first-time Telegram user could pick it
+                            up without instructions.</p>
+                        <p>It runs on a Node.js / Express backend with MongoDB, with the Anthropic and OpenAI APIs
+                            integrated for tutoring and Q&A. The homepage at myflorence.co is React + TailwindCSS.</p>
+                        <p class="foot">Won 2nd place + Most Impactful Business | TEDxLagos Young Innovators'
+                            Accelerator Programme 2025.</p>
+                        <a class="work-link" href="https://myflorence.co" target="_blank" rel="noopener">Visit live
+                            site</a>
+                    </div>
+                    <div class="impacts">
+                        <div class="impact"><span class="num">1,500+</span><span class="lbl">users</span></div>
+                        <div class="impact"><span class="num">0</span><span class="lbl">marketing spend, 10 months
+                                in</span></div>
+                        <div class="impact"><span class="num">2nd</span><span class="lbl">place @ TEDxLagos Young
+                                Innovators' Accelerator Programme, June 2025</span></div>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <div class="work-aside">
+                        <div class="work-year">2025</div>
+                        <div class="work-tag"><span class="dot">E</span>Encentral EMS</div>
+                        <div class="work-role">Frontend developer</div>
+                        <div class="work-stack">
+                            <span>Angular 17</span><span>TypeScript</span><span>Material UI</span><span>Angular
+                                CDK</span><span>SCSS</span>
+                        </div>
+                    </div>
+                    <div class="work-body">
+                        <h3>An internal tool that replaced <em>spreadsheet chaos</em> for a whole department.</h3>
+                        <p>At Encentral Solutions, I picked up the company stack: Angular (with the old modular
+                            component architecture, at a time when Angular had already moved to standalone components)
+                            and SCSS with Material UI and built their internal employee management system. Role-based
+                            access control, drag-and-drop kanban boards via Angular CDK, attendance tracking, leave
+                            management, and data-driven dashboards for both admins and employees.</p>
+                        <p>The system replaced their previous Google Sheets-based task tracking and is currently in
+                            active internal use.</p>
+                        <p class="foot">Delivered in 5 weeks | Against a 3-month onboarding timeline.</p>
+                        <a class="work-link" href="https://esl-ems.netlify.app" target="_blank" rel="noopener">View
+                            project</a>
+                    </div>
+                    <div class="impacts">
+                        <div class="impact"><span class="num">5 wks</span><span class="lbl">delivered against a 3-month
+                                onboarding timeline</span></div>
+                        <div class="impact"><span class="num">20%</span><span class="lbl">better productivity among team
+                                leads and PMs</span></div>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <div class="work-aside">
+                        <div class="work-year">2026</div>
+                        <div class="work-tag"><span class="dot">R</span>RentWatch</div>
+                        <div class="work-role">Solo | Hackathon</div>
+                        <div class="work-stack">
+                            <span>Next.js</span><span>TypeScript</span><span>TailwindCSS</span><span>Supabase</span><span>Framer
+                                Motion</span><span>Recharts</span>
+                        </div>
+                    </div>
+                    <div class="work-body">
+                        <h3>A reputation system for Lagos landlords and tenants, <em>built in four days.</em></h3>
+                        <p>RentWatch was a solution built by Team Sibyl (<a class="inline-link" href="https://github.com/Dr_Stone27" target="_blank" rel="noopener">@Dr_Stone</a> and
+                            <a class="inline-link" href="https://github.com/akcumeh" target="_blank" rel="noopener">I</a>) for the <a class="inline-link" href="https://buildathon.enyata.com/" target="_blank" rel="noopener">Enyata × Interswitch Buildathon 2026</a>. If you've seen
+                            <em>Psycho Pass</em>, it's basically the Sibyl System, but for Lagos real estate. Landlords
+                            and tenants both have a Hue Score reputation system that tracks reliability across lease
+                            periods, and each side gets a separate role-based dashboard.</p>
+                        <p>RentWatch is still in development, but right now has a full PostgreSQL schema + RLS, animated
+                            dashboards with Framer Motion and Recharts, a mock lease and payment management flow using
+                            Interswitch APIs.</p>
+                        <p class="foot"><a class="inline-link" href="https://buildathon.enyata.com/" target="_blank" rel="noopener">Enyata × Interswitch Buildathon</a> | 2026</p>
+                        <a class="work-link" href="https://sibyl-rentwatch.vercel.app/login" target="_blank"
+                           rel="noopener">View project</a>
+                    </div>
+                    <div class="impacts">
+                        <div class="impact"><span class="num">4d</span><span class="lbl">from brief to deployed,
+                                greenfield</span></div>
+                        <div class="impact"><span class="num">0→1</span><span class="lbl">full product, idea to live app
+                                under hackathon constraint</span></div>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <div class="work-aside">
+                        <div class="work-year">2026</div>
+                        <div class="work-tag"><span class="dot">G</span>Guessing Game</div>
+                        <div class="work-role">Solo | Full-stack</div>
+                        <div class="work-stack">
+                            <span>Socket.io</span><span>TypeScript</span><span>React</span><span>Vite</span><span>Supabase</span><span>Vitest</span><span>RTL</span>
+                        </div>
+                    </div>
+                    <div class="work-body">
+                        <h3>Real-time multiplayer, <em>tested end-to-end,</em> plays best with four people.</h3>
+                        <p>A live word-guessing game with session management, reconnection handling, live game state
+                            broadcasting via Socket.io, countdown timers, and player disconnect cleanup. Frontend
+                            components are tested with Vitest and React Testing Library while the backend is covered
+                            with Jest.</p>
+                        <p>A simple coursework project replaced Monopoly at game nights with my brothers. Honestly, it's
+                            a fair metric of whether a game actually works.</p>
+                        <p class="foot">TypeScript across the stack | PostgreSQL data layer via Supabase</p>
+                        <a class="work-link" href="https://akcumeh-gg.netlify.app" target="_blank" rel="noopener">Play
+                            it</a>
+                    </div>
+                    <div class="impacts">
+                        <div class="impact"><span class="num">Real-time</span><span class="lbl">game rooms with
+                                Socket.io, live game state synced across all connected sessions</span></div>
+                        <div class="impact"><span class="num">2-layer</span><span class="lbl">test coverage: frontend
+                                (Vitest + RTL) and backend</span></div>
+                    </div>
+                </article>
+
+            </div>
+
+            <a class="see-all-link" href="projects.html">See the <em>full project library</em></a>
+        </div>
+    </section>
+
+    <section class="cream" id="writing">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <div class="section-label">04 — Writing</div>
+                    <h2 class="section-title">Notes I've <em>published.</em></h2>
+                </div>
+                <div class="section-meta">
+                    On dev.to.
+                </div>
+            </div>
+
+            <div class="writing-list">
+                <a class="writing-item"
+                   href="https://dev.to/akcumeh/responsive-space-tourism-app-with-react-native-what-i-built-what-i-learned-2h8d"
+                   target="_blank" rel="noopener">
+                    <div class="writing-date">Aug 2025</div>
+                    <div class="writing-title">Responsive Space Tourism App with React Native: What I <em>Built</em>
+                        &amp; What I <em>Learned</em></div>
+                    <div class="writing-tag">React Native</div>
+                    <div class="writing-read">4 min</div>
+                </a>
+                <a class="writing-item"
+                   href="https://dev.to/akcumeh/to-do-app-with-react-native-what-i-built-what-i-learned-4hej"
+                   target="_blank" rel="noopener">
+                    <div class="writing-date">Aug 2025</div>
+                    <div class="writing-title">To-do App with React Native: What I <em>Built</em> &amp; What I
+                        <em>Learned</em></div>
+                    <div class="writing-tag">React Native</div>
+                    <div class="writing-read">5 min</div>
+                </a>
+                <a class="writing-item"
+                   href="https://dev.to/akcumeh/30daysofcode-september-my-journey-to-dsa-mastery-647" target="_blank"
+                   rel="noopener">
+                    <div class="writing-date">Sep 2024</div>
+                    <div class="writing-title">#30DaysofCode September: My Journey to <em>DSA Mastery</em></div>
+                    <div class="writing-tag">DSA</div>
+                    <div class="writing-read">4 min</div>
+                </a>
+            </div>
+
+            <div class="writing-foot">
+                <a href="https://dev.to/akcumeh" target="_blank" rel="noopener">All articles on dev.to/akcumeh ↗</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <div class="section-label">05 — Outside the terminal</div>
+                    <h2 class="section-title">Things I love <em>when the laptop closes.</em></h2>
+                </div>
+                <div class="section-meta">
+                    Five-ish answers to<br>
+                    "what do you do for fun?"
+                </div>
+            </div>
+
+            <div class="hobbies-grid">
+                <div class="hobby">
+                    <span class="idx">01</span>
+                    <span class="glyph">Crochet</span>
+                    <h4>The <em>slowest</em> kind of debugging.</h4>
+                    <p>One stitch at a time, and the only error message is a knot. There's something honest about a
+                        hobby that doesn't compile.</p>
+                </div>
+                <div class="hobby">
+                    <span class="idx">02</span>
+                    <span class="glyph">Classical</span>
+                    <h4>Music with <em>real</em> architecture.</h4>
+                    <p>Handel, Bach, Chopin, Ravel. Anything with a structure I can get lost in. Headphones on repeat while I bury myself in layers of intricate melodies.</p>
+                </div>
+                <div class="hobby">
+                    <span class="idx">03</span>
+                    <span class="glyph">Mortal Kombat</span>
+                    <h4>Pummeling my brothers, barely as fun as getting fatalitied myself.</h4>
+                    <p>I main Raiden and Kitana — day-one loyalty on both. The combos live in my fingers in a way no
+                        framework ever will.</p>
+                </div>
+                <div class="hobby">
+                    <span class="idx">04</span>
+                    <span class="glyph">Cooking</span>
+                    <h4><em>Creativity</em> locked behind the paywall of meal prep.</h4>
+                    <p>I love creating colorful meals that tantalize the eyes and the tongue. And anyway, a good meal is
+                        a reliable win.</p>
+                </div>
+                <div class="hobby">
+                    <span class="idx">05</span>
+                    <span class="glyph">Gym</span>
+                    <h4>The other place I <em>compile</em> stress.</h4>
+                    <p>Heavy things, repeated. And I've found it's a neat feedback loop: show up, do the reps, sleep
+                        better. The body needs version control too.</p>
+                </div>
+                <div class="hobby orchid-tint">
+                    <span class="idx">06</span>
+                    <span class="glyph">— and</span>
+                    <h4>A handful of <em>quieter</em> ones.</h4>
+                    <p>Long walks. Stargazing. Anime. Wikipedia rabbit holes. The list is allowed to grow and shift, and it
+                        actually does often.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="foot-section-label">06 — Contact</div>
+            <h2 class="foot-headline">Got a build in mind?<br><em>Let's talk.</em></h2>
+            <p class="foot-sub">
+                Best by email: <a href="mailto:akcumeh@gmail.com">akcumeh@gmail.com</a>. I reply within a day.
+            </p>
+
+            <div class="foot-grid">
+                <div>
+                    <h5>Direct</h5>
+                    <ul>
+                        <li><a href="mailto:akcumeh@gmail.com">akcumeh@gmail.com <span class="arrow">↗</span></a></li>
+                        <li><a href="https://docs.google.com/document/d/1WCcdr32fUcehnvQJbd5pFRsR_7H5Pj2A-LPYFyyPfGw/export?format=pdf"
+                               target="_blank" rel="noopener">Download CV (PDF) <span class="arrow">↗</span></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Code</h5>
+                    <ul>
+                        <li><a href="https://github.com/akcumeh" target="_blank" rel="noopener">GitHub <span
+                                      class="arrow">↗</span></a></li>
+                        <li><a href="https://dev.to/akcumeh" target="_blank" rel="noopener">dev.to <span
+                                      class="arrow">↗</span></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Social</h5>
+                    <ul>
+                        <li><a href="https://linkedin.com/in/angelumeh" target="_blank" rel="noopener">LinkedIn <span
+                                      class="arrow">↗</span></a></li>
+                        <li><a href="https://x.com/akcumeh" target="_blank" rel="noopener">X / Twitter <span
+                                      class="arrow">↗</span></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Site</h5>
+                    <ul>
+                        <li><a href="projects.html">Full project library <span class="arrow">→</span></a></li>
+                        <li><a href="#top">Back to top <span class="arrow">↑</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="foot-bottom">
+                <span>© 2026 Angel Umeh | Built with TypeScript and coffee.</span>
+                <div class="right">
+                    <span>v1.0</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="src/index.ts"></script>
 </body>
+
 </html>
