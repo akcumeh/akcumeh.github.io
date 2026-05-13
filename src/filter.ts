@@ -19,8 +19,7 @@ export function initFilter(): void {
 
             card.hidden = !show;
 
-            // archive rows exist outside the main count (no filter button for them)
-            if (show && !isArchive) visible++;
+            if (show) visible++;
         });
 
         countEl!.textContent = String(visible);
@@ -45,6 +44,9 @@ export function initFilter(): void {
             if (pill) pill.textContent = String(groupCount);
         });
     }
+
+    // compute count on load so it's never shown as 0
+    applyFilter('all');
 
     buttons.forEach(btn => {
         btn.addEventListener('click', () => {

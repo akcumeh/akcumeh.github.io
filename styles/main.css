@@ -744,7 +744,8 @@ footer .container { position: relative; }
 .al-tag { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: rgba(254,245,228,0.3); text-transform: uppercase; letter-spacing: 0.07em; }
 .al-name { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; color: var(--cream); margin-bottom: 6px; letter-spacing: -0.01em; }
 .al-desc { font-size: 14px; line-height: 1.6; color: rgba(254,245,228,0.55); max-width: 640px; }
-.al-link { display: inline-block; margin-top: 10px; font-family: 'JetBrains Mono', monospace; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em; color: rgba(249,184,208,0.55); transition: color 0.15s; }
+.al-links { display: flex; gap: 20px; margin-top: 10px; }
+.al-link { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em; color: rgba(249,184,208,0.55); transition: color 0.15s; }
 .al-link::after { content: " ↗"; }
 .al-link:hover { color: var(--blush); }
 
