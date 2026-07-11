@@ -214,8 +214,10 @@
                 <div class="stack-row">
                     <div class="name" tabindex="0">Backend</div>
                     <div class="chips">
-                        <span class="hl">Node.js / Express</span><span class="hl">FastAPI</span><span class="hl">RESTful
-                            APIs</span><span>Socket.io</span><span>JWT auth</span><span>Bull + Redis</span>
+                        <span class="hl">Node.js / Express</span><span class="hl">NestJS</span><span
+                              class="hl">FastAPI</span><span class="hl">RESTful
+                            APIs</span><span>Socket.io</span><span>JWT auth</span><span>Bull +
+                            Redis</span><span>node-cron</span><span>Nodemailer</span><span>Paystack integration</span>
                     </div>
                 </div>
                 <div class="stack-row">
@@ -262,7 +264,9 @@
                 </div>
             </div>
 
-            <div class="work-grid">
+            <div class="work-showcase">
+                <button class="work-nav prev" aria-label="Previous project">&larr;</button>
+                <div class="work-grid" id="work-track">
 
                 <article class="work-card">
                     <div class="work-aside">
@@ -275,7 +279,7 @@
                         </div>
                     </div>
                     <div class="work-body">
-                        <h3>An educational assistant that reached <em>1,500+ students</em> and counting.</h3>
+                        <h3>An educational assistant that reached <em>3,100+ students</em> and counting.</h3>
                         <p>Florence AI is a WhatsApp and Telegram chatbot built for underserved students in Africa and
                             Latin America who can't afford private tutoring or paid AI plans. Every architectural
                             decision was mine: the command structure, the payment flow, the database schema. The core
@@ -285,12 +289,12 @@
                             integrated for tutoring and Q&A. The homepage is in React + TailwindCSS.</p>
                         <p class="foot">Won 2nd place + Most Impactful Business @ TEDxLagos Young Innovators'
                             Accelerator Programme 2025.</p>
-                        <a class="work-link" href="https://myflorence.co" target="_blank" rel="noopener">Visit live
+                        <a class="work-link" href="https://myflorence.site" target="_blank" rel="noopener">Visit live
                             site</a>
                     </div>
                     <div class="impacts">
-                        <div class="impact"><span class="num">1,500+</span><span class="lbl">users</span></div>
-                        <div class="impact"><span class="num">0</span><span class="lbl">marketing spend, 10 months
+                        <div class="impact"><span class="num">3,100+</span><span class="lbl">users</span></div>
+                        <div class="impact"><span class="num">0</span><span class="lbl">marketing spend, 11 months
                                 in</span></div>
                         <div class="impact"><span class="num">2nd</span><span class="lbl">place @ TEDxLagos Young
                                 Innovators' Accelerator Programme, June 2025</span></div>
@@ -299,32 +303,28 @@
 
                 <article class="work-card">
                     <div class="work-aside">
-                        <div class="work-year">2025</div>
-                        <div class="work-tag"><span class="dot">E</span>Encentral EMS</div>
-                        <div class="work-role">Frontend developer</div>
+                        <div class="work-year">2026</div>
+                        <div class="work-tag"><span class="dot">E</span>Eventful</div>
+                        <div class="work-role">Solo | AltSchool capstone</div>
                         <div class="work-stack">
-                            <span>Angular 17</span><span>TypeScript</span><span>Material UI</span><span>Angular
-                                CDK</span><span>SCSS</span>
+                            <span>NestJS</span><span>TypeScript</span><span>Supabase</span><span>Next.js</span><span>Paystack</span>
                         </div>
                     </div>
                     <div class="work-body">
-                        <h3>An internal tool that replaced <em>spreadsheet chaos</em> for a whole department.</h3>
-                        <p>At Encentral Solutions, I picked up the company stack: Angular (with the old modular
-                            component architecture, at a time when Angular had already moved to standalone components)
-                            and SCSS with Material UI and built their internal employee management system. Role-based
-                            access control, drag-and-drop kanban boards via Angular CDK, attendance tracking, leave
-                            management, and data-driven dashboards for both admins and employees.</p>
-                        <p>The system replaced their previous Google Sheets-based task tracking and is currently in
-                            active internal use.</p>
-                        <p class="foot">Delivered in 5 weeks against a 3-month onboarding timeline.</p>
-                        <a class="work-link" href="https://esl-ems.netlify.app" target="_blank" rel="noopener">View
-                            project</a>
+                        <h3>An event ticketing platform, from <em>discovery to QR-coded entry.</em></h3>
+                        <p>Eventful is a full event platform for Lagos. Creators publish events, attendees browse by
+                            category, pay with Paystack, and get a QR-coded ticket by email. Reminder emails go out
+                            ahead of each event, configurable by both sides.</p>
+                        <p class="foot">AltSchool Backend Engineering capstone | Full API docs on Postman</p>
+                        <a class="work-link" href="https://akcumeh-eventful.vercel.app" target="_blank"
+                           rel="noopener">Visit live site</a>
                     </div>
                     <div class="impacts">
-                        <div class="impact"><span class="num">5 wks</span><span class="lbl">delivered against a 3-month
-                                onboarding timeline</span></div>
-                        <div class="impact"><span class="num">20%</span><span class="lbl">better productivity among team
-                                leads and PMs</span></div>
+                        <div class="impact"><span class="num">20</span><span class="lbl">tickets sold so far</span></div>
+                        <div class="impact"><span class="num">2</span><span class="lbl">roles, creator and attendee,
+                                each with its own permissions and views</span></div>
+                        <div class="impact"><span class="num">QR</span><span class="lbl">tickets delivered by
+                                email</span></div>
                     </div>
                 </article>
 
@@ -362,33 +362,37 @@
 
                 <article class="work-card">
                     <div class="work-aside">
-                        <div class="work-year">2026</div>
-                        <div class="work-tag"><span class="dot">G</span>Guessing Game</div>
-                        <div class="work-role">Solo | Full-stack</div>
+                        <div class="work-year">2025</div>
+                        <div class="work-tag"><span class="dot">E</span>Encentral EMS</div>
+                        <div class="work-role">Frontend developer</div>
                         <div class="work-stack">
-                            <span>Socket.io</span><span>TypeScript</span><span>React</span><span>Vite</span><span>Supabase</span><span>Vitest</span><span>RTL</span>
+                            <span>Angular 17</span><span>TypeScript</span><span>Material UI</span><span>Angular
+                                CDK</span><span>SCSS</span>
                         </div>
                     </div>
                     <div class="work-body">
-                        <h3>Real-time multiplayer, <em>tested end-to-end,</em> plays best with four people.</h3>
-                        <p>A live word-guessing game with session management, reconnection handling, live game state
-                            broadcasting via Socket.io, countdown timers, and player disconnect cleanup. Frontend
-                            components are tested with Vitest and React Testing Library while the backend is covered
-                            with Jest.</p>
-                        <p>A simple coursework project replaced Monopoly at game nights with my brothers. Honestly, it's
-                            a fair metric of whether a game actually works.</p>
-                        <p class="foot">TypeScript across the stack | PostgreSQL data layer via Supabase</p>
-                        <a class="work-link" href="https://akcumeh-gg.netlify.app" target="_blank" rel="noopener">Play
-                            it</a>
+                        <h3>An internal tool that replaced <em>spreadsheet chaos</em> for a whole department.</h3>
+                        <p>At Encentral Solutions, I picked up the company stack: Angular (with the old modular
+                            component architecture, at a time when Angular had already moved to standalone components)
+                            and SCSS with Material UI and built their internal employee management system. Role-based
+                            access control, drag-and-drop kanban boards via Angular CDK, attendance tracking, leave
+                            management, and data-driven dashboards for both admins and employees.</p>
+                        <p>The system replaced their previous Google Sheets-based task tracking and is currently in
+                            active internal use.</p>
+                        <p class="foot">Delivered in 5 weeks against a 3-month onboarding timeline.</p>
+                        <a class="work-link" href="https://esl-ems.netlify.app" target="_blank" rel="noopener">View
+                            project</a>
                     </div>
                     <div class="impacts">
-                        <div class="impact"><span class="num">Real-time</span><span class="lbl">game rooms with
-                                Socket.io, live game state synced across all connected sessions</span></div>
-                        <div class="impact"><span class="num">2-layer</span><span class="lbl">test coverage: frontend
-                                (Vitest + RTL) and backend (Jest)</span></div>
+                        <div class="impact"><span class="num">5 wks</span><span class="lbl">delivered against a 3-month
+                                onboarding timeline</span></div>
+                        <div class="impact"><span class="num">20%</span><span class="lbl">better productivity among team
+                                leads and PMs</span></div>
                     </div>
                 </article>
 
+                </div>
+                <button class="work-nav next" aria-label="Next project">&rarr;</button>
             </div>
 
             <a class="see-all-link" href="/projects">See the <em>full project library</em></a>
@@ -408,6 +412,14 @@
             </div>
 
             <div class="writing-list">
+                <a class="writing-item"
+                   href="https://dev.to/akcumeh/my-journey-at-altschool-africa-366b"
+                   target="_blank" rel="noopener">
+                    <div class="writing-date">Jul 2026</div>
+                    <div class="writing-title">Turns Out I Never Knew What <em>Node.js</em> Was</div>
+                    <div class="writing-tag">Node.js</div>
+                    <div class="writing-read">10 min</div>
+                </a>
                 <a class="writing-item"
                    href="https://dev.to/akcumeh/responsive-space-tourism-app-with-react-native-what-i-built-what-i-learned-2h8d"
                    target="_blank" rel="noopener">

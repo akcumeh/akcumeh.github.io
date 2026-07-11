@@ -427,7 +427,39 @@ section.cream .section-meta { color: rgba(14,11,36,0.45); }
 .stack-row .name:focus-visible { outline: 2px solid var(--punch); outline-offset: 6px; border-radius: 4px; }
 
 /* ─── WORK CARDS ─── */
-.work-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+.work-showcase { position: relative; }
+.work-grid {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    /* lets the edge cards reach dead centre, so every snap point sits one card-step apart */
+    padding-inline: calc((100% - min(85vw, 940px)) / 2);
+}
+.work-grid::-webkit-scrollbar { display: none; }
+.work-grid > .work-card { flex: 0 0 min(85vw, 940px); scroll-snap-align: center; }
+.work-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid rgba(254,245,228,0.2);
+    background: rgba(14,11,36,0.72);
+    color: var(--cream);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+}
+.work-nav:hover { border-color: var(--punch); background: var(--punch); }
+.work-nav.prev { left: -12px; }
+.work-nav.next { right: -12px; }
 .work-card {
     background: rgba(254,245,228,0.04);
     border: 1px solid rgba(254,245,228,0.1);
